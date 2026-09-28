@@ -1,0 +1,111 @@
+### eval3 comparar
+## Comparación de proveedores (para 500 unidades)
+
+| # | Proveedor | Tipo / insignia | Precio ¥ | Costo unit. ¥ (c/flete China) | Costo unit. USD | Puntaje /100 | Alertas |
+|---|---|---|---|---|---|---|---|
+| 1 | Súper fábrica Baigou | fabrica / super | 38.00 | 38.16 | 5.68 | 78 | — |
+| 2 | Comerciante Guangzhou | revendedor / solidez | 34.00 | 34.12 | 5.08 | 52 | — |
+| 3 | Tienda nueva | desconocido / ninguna | 22.00 | 22.00 | 3.27 | 18 | precio sospechoso; tienda nueva |
+
+Puntaje = insignia (20) + tipo (10) + años (10) + recompra (15) + estrellas (10) + respuesta (5) + muestra (5) + video (5) + precio relativo (20). Es una ayuda: la muestra física y la verificación pesan más.
+- Tipo de cambio CNY/USD = 6.7195 (open.er-api.com (caché), Mon, 28 Sep 2026; valor de mercado, sin recargos).
+
+## Plan AQL — lote 500 unidades, nivel general II (letra de código H, muestra base 50)
+
+| Defecto | AQL | Unidades a revisar | Acepta con ≤ | Rechaza con ≥ |
+|---|---|---|---|---|
+| Crítico | 0 | 50 | 0 | 1 |
+| Mayor | 2.5 | 50 | 3 | 4 |
+| Menor | 4.0 | 50 | 5 | 6 |
+
+- Crítico: cualquier defecto de seguridad o normativo rechaza el lote.
+- Si un plan usa una muestra mayor que otro, se revisan las unidades del plan mayor y se aplican los números de aceptación de cada tipo de defecto.
+
+### eval4 enlace
+## Weidian (微店) — id 7234567890 (desde cnfans.com)
+
+- Link original (guárdalo siempre; no depende de ningún agente): https://weidian.com/item.html?itemID=7234567890
+
+| Agente | Link | Estado |
+|---|---|---|
+| Kakobuy | https://www.kakobuy.com/item/details?url=https%3A%2F%2Fweidian.com%2Fitem.html%3FitemID%3D7234567890 | activo¹ |
+| Superbuy | https://www.superbuy.com/en/page/buy/?url=https%3A%2F%2Fweidian.com%2Fitem.html%3FitemID%3D7234567890 | activo¹ |
+| Sugargoo | https://www.sugargoo.com/productDetail?productLink=https%3A%2F%2Fweidian.com%2Fitem.html%3FitemID%3D7234567890 | activo¹ |
+| CSSBuy | https://www.cssbuy.com/item-micro-7234567890.html | activo¹ |
+
+¹ Según reportes públicos a sept-2026. Los agentes abren y cierran seguido: verifica antes de cargar saldo y no dejes dinero ni paquetes detenidos mucho tiempo.
+
+- Ocultos por estado de riesgo o cierre: Mulebuy, CNFans (usa --todos para verlos).
+
+## Peso cobrable — 1 caja(s) de 40.0×30.0×25.0 cm, 3.0 kg c/u
+
+| Método | Peso volumétrico kg | Peso real kg | Peso cobrable kg | Manda |
+|---|---|---|---|---|
+| Courier express (DHL/FedEx/UPS) (/5000) | 6.00 | 3.00 | 6.00 | volumen |
+| Aéreo IATA / muchas líneas (/6000) | 5.00 | 3.00 | 5.00 | volumen |
+| Algunas líneas económicas de agentes (/8000) | 3.75 | 3.00 | 3.75 | volumen |
+
+- Volumen total: 0.030 m³ (marítimo LCL cobra 0.030 W/M; 1 m³ = 1.000 kg). Muchos consolidados cobran un mínimo de 1 m³.
+- Densidad: 100 kg/m³ (liviano/voluminoso: el volumen encarece el aéreo; considera quitar cajas, vacío o marítimo).
+
+### eval5 talla+conversion
+## 89.00 CNY — open.er-api.com (caché), Mon, 28 Sep 2026
+
+| Moneda | Valor de mercado | Con recargo 4.0% |
+|---|---|---|
+| CLP | 12,745 | 13,255 |
+
+## Talla de ropa — tu medida 100.0 cm, holgura deseada 20 cm (holgado)
+
+| Talla | Contorno de la prenda (cm) | Holgura resultante (cm) |
+|---|---|---|
+| M | 104.0 | 4.0 |
+| L | 110.0 | 10.0 |
+| XL | 116.0 | 16.0 |
+
+- Recomendación: **ninguna talla alcanza; pide una más grande**.
+- 平铺 = medida en plano (usa --plano: se multiplica ×2). Las tallas chinas suelen ser 1–2 tallas menores que las latinoamericanas: guíate por centímetros, no por la letra.
+
+### eval6 peru
+## Costo puesto en destino — peru (TC 6.7195 CNY/USD, 3.39 PEN/USD)
+
+| Concepto | USD | PEN |
+|---|---|---|
+| Producto (150 × ¥6.00) | 133.94 | 454 |
+| Flete interno China | 2.23 | 8 |
+| Comisión agente (0.0%) | 0.00 | 0 |
+| Recargo medio de pago/cambio (0.0%) | 0.00 | 0 |
+| Flete internacional | 56.00 | 190 |
+| Seguro (0.0%) | 0.00 | 0 |
+| Arancel (6.0% s/CIF) | 0.00 | 0 |
+| IVA / impuesto (18.0%) | 0.00 | 0 |
+| Gastos locales (agente, gestión, despacho) | 0.00 | 0 |
+| **TOTAL** | 192.17 | 652 |
+| **Por unidad** | 1.28 | 4 |
+
+- Valor FOB (mercadería + flete interno): USD 136.17 · Valor CIF aduanero: USD 192.17
+- Perú: hasta USD 200 FOB sin tributos (SUNAT evalúa cobrar IGV; verificar). Sobre eso: ad valorem (0/6/11% según partida; 6% por defecto) + IGV 16% + IPM 2%. TLC Perú–China puede dejar el arancel en 0%.
+- FOB ≤ USD 200: exento de tributos según el preset.
+- Tipo de cambio CNY/USD = 6.7195 (open.er-api.com (caché), Mon, 28 Sep 2026; valor de mercado, sin recargos).
+- Tipo de cambio PEN/USD = 3.3929 (open.er-api.com (caché), Mon, 28 Sep 2026; valor de mercado, sin recargos).
+
+## Costo puesto en destino — peru (TC 6.7195 CNY/USD, 3.39 PEN/USD)
+
+| Concepto | USD | PEN |
+|---|---|---|
+| Producto (250 × ¥6.00) | 223.23 | 757 |
+| Flete interno China | 2.23 | 8 |
+| Comisión agente (0.0%) | 0.00 | 0 |
+| Recargo medio de pago/cambio (0.0%) | 0.00 | 0 |
+| Flete internacional | 91.00 | 309 |
+| Seguro (0.0%) | 0.00 | 0 |
+| Arancel (6.0% s/CIF) | 18.99 | 64 |
+| IVA / impuesto (18.0%) | 60.38 | 205 |
+| Gastos locales (agente, gestión, despacho) | 0.00 | 0 |
+| **TOTAL** | 395.83 | 1,343 |
+| **Por unidad** | 1.58 | 5 |
+
+- Valor FOB (mercadería + flete interno): USD 225.46 · Valor CIF aduanero: USD 316.46
+- Perú: hasta USD 200 FOB sin tributos (SUNAT evalúa cobrar IGV; verificar). Sobre eso: ad valorem (0/6/11% según partida; 6% por defecto) + IGV 16% + IPM 2%. TLC Perú–China puede dejar el arancel en 0%.
+- Tipo de cambio CNY/USD = 6.7195 (open.er-api.com (caché), Mon, 28 Sep 2026; valor de mercado, sin recargos).
+- Tipo de cambio PEN/USD = 3.3929 (open.er-api.com (caché), Mon, 28 Sep 2026; valor de mercado, sin recargos).

@@ -1,0 +1,44 @@
+{
+  "expectations": [
+    {
+      "text": "Tabla comparativa con puntaje",
+      "passed": true,
+      "evidence": "| Puntaje |"
+    },
+    {
+      "text": "Descarta la tienda nueva por precio sospechoso",
+      "passed": true,
+      "evidence": "Descarta la tienda nueva"
+    },
+    {
+      "text": "Recomienda muestras de 2 proveedores",
+      "passed": true,
+      "evidence": "muestras a Baigou y a Guangzhou"
+    },
+    {
+      "text": "Pago dentro de 1688 para mantener custodia",
+      "passed": true,
+      "evidence": "dentro de 1688"
+    },
+    {
+      "text": "Si hay transferencia: cuenta de empresa y 30/70",
+      "passed": true,
+      "evidence": "cuenta de empresa** cuyo titular coincida con la licencia, **30%"
+    },
+    {
+      "text": "Menciona no confirmar recepción / 延长收货",
+      "passed": true,
+      "evidence": "延长收货"
+    },
+    {
+      "text": "Plan AQL correcto para 500 (50 unidades)",
+      "passed": true,
+      "evidence": "revisar 50 mochilas"
+    },
+    {
+      "text": "Menciona Trade Assurance como alternativa",
+      "passed": true,
+      "evidence": "Trade Assurance"
+    }
+  ]
+}

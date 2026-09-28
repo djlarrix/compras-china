@@ -1,0 +1,44 @@
+{
+  "expectations": [
+    {
+      "text": "Aplica umbral USD 200 FOB de Perú",
+      "passed": true,
+      "evidence": "USD 200"
+    },
+    {
+      "text": "Concluye sin tributos para 150 unidades",
+      "passed": true,
+      "evidence": "no pagas tributos"
+    },
+    {
+      "text": "Costo por funda en soles",
+      "passed": true,
+      "evidence": "S/ 4,35"
+    },
+    {
+      "text": "Escenario sobre umbral con ad valorem + IGV 16% + IPM 2%",
+      "passed": true,
+      "evidence": "IGV 16% + IPM 2%"
+    },
+    {
+      "text": "Menciona TLC Perú–China",
+      "passed": true,
+      "evidence": "TLC Perú–China"
+    },
+    {
+      "text": "Advierte cambio pendiente de SUNAT",
+      "passed": true,
+      "evidence": "SUNAT ha planteado"
+    },
+    {
+      "text": "Advierte sobre fraccionamiento",
+      "passed": true,
+      "evidence": "fraccionamiento"
+    },
+    {
+      "text": "Tipo de cambio con fecha",
+      "passed": true,
+      "evidence": "28-sep-2026"
+    }
+  ]
+}

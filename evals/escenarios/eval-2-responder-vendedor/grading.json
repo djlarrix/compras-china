@@ -1,0 +1,44 @@
+{
+  "expectations": [
+    {
+      "text": "Traduce el mensaje del vendedor",
+      "passed": true,
+      "evidence": "Traducción"
+    },
+    {
+      "text": "Interpreta 已经是最低价了 como posición inicial",
+      "passed": true,
+      "evidence": "最低价了，利润很薄，300件的话可以包邮到广州仓库，样品费20元不退' qué significa y qué le contesto? quiero bajar el precio de 13.5 a 12 yuanes  # Respu"
+    },
+    {
+      "text": "Explica 包邮 y la muestra no reembolsable",
+      "passed": true,
+      "evidence": "包邮到广州仓库，样品费20元不退' qué significa y qué le contesto? quiero bajar el precio de 13.5 a 12 yuanes  # Respuesta (siguiendo la"
+    },
+    {
+      "text": "Respuesta en chino lista para copiar",
+      "passed": true,
+      "evidence": "el vendedor me respondió esto en el chat de 1688: '亲，这个已经是最低价了，利润很薄，300件的话可以包邮到广州仓库，样品费20元不退' qué significa y qué le con"
+    },
+    {
+      "text": "Traduce su propia respuesta al español",
+      "passed": true,
+      "evidence": "> Entiendo, jefe"
+    },
+    {
+      "text": "Propone contrapartidas (volumen, repuestos, muestra descontable)",
+      "passed": true,
+      "evidence": "descontar cuando haga el pedido grande?  **Opción B: si el precio no se mueve, pedir otras cosas** ``` 好的，价格就按13.5元。那300"
+    },
+    {
+      "text": "Recomienda 改价 y dejar evidencia en el chat de 1688",
+      "passed": true,
+      "evidence": "1688: '亲，这个已经是最低价了，利润很薄，300件的话可以包邮到广州仓库，样品费20元不退' qué significa y qué le contesto? quiero bajar el precio de 13.5 a 12 y"
+    },
+    {
+      "text": "Da meta de precio realista con cálculo",
+      "passed": true,
+      "evidence": "12,5"
+    }
+  ]
+}

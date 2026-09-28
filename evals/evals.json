@@ -1,0 +1,53 @@
+{
+  "skill_name": "compras-china",
+  "evals": [
+    {
+      "id": 1,
+      "name": "eval-1-termos-chile",
+      "prompt": "quiero importar 300 botellas termicas de acero desde 1688 para venderlas en chile a unos 9.990 pesos, siempre he usado kakobuy pero ahora quiero hablar directo con la fabrica. como lo hago paso a paso y cuanto me sale cada una puesta en santiago?",
+      "expected_output": "Plan paso a paso (保温杯 304, clúster Yongkang, precio de referencia, mensaje en chino, verificación, muestra, canal), costo puesto en Santiago aéreo vs marítimo con china_tools.py costo y margen, Form F, AQL para 300, advertencia de grado alimentario y calendario chino.",
+      "files": [],
+      "assertions": ["Incluye mensaje en chino listo para copiar", "Pide acero 304 y certificado de material", "Apunta al clúster correcto (Yongkang)", "Da referencia de precio con mediana y alerta de oferta sospechosa", "Compara aéreo vs marítimo con costo por unidad en CLP", "Calcula margen contra el precio de venta", "Menciona Form F / TLC para arancel 0%", "Incluye IVA 19% y arancel 6%", "Plan AQL correcto para 300 (50 unidades, Ac 3 mayor)", "Advierte contacto con alimentos / grado alimentario", "Considera el calendario chino (Semana Dorada)", "Termina con siguiente acción"]
+    },
+    {
+      "id": 2,
+      "name": "eval-2-responder-vendedor",
+      "prompt": "el vendedor me respondió esto en el chat de 1688: '亲，这个已经是最低价了，利润很薄，300件的话可以包邮到广州仓库，样品费20元不退' qué significa y qué le contesto? quiero bajar el precio de 13.5 a 12 yuanes",
+      "expected_output": "Traducción, interpretación de las frases, meta de precio realista, dos respuestas en chino con traducción, contrapartidas, 改价 y evidencia en el chat de 1688.",
+      "files": [],
+      "assertions": ["Traduce el mensaje del vendedor", "Interpreta 已经是最低价了 como posición inicial", "Explica 包邮 y la muestra no reembolsable", "Respuesta en chino lista para copiar", "Traduce su propia respuesta al español", "Propone contrapartidas (volumen, repuestos, muestra descontable)", "Recomienda 改价 y dejar evidencia en el chat de 1688", "Da meta de precio realista con cálculo"]
+    },
+    {
+      "id": 3,
+      "name": "eval-3-comparar-mochilas",
+      "prompt": "encontré 3 proveedores de mochilas en 1688: uno es 超级工厂 de Baigou a 38 yuanes con 35% de recompra, otro es 实力商家 en Guangzhou a 34 yuanes con 20%, y una tienda nueva a 22 yuanes con 5 estrellas. voy a pedir 500. a quien le compro y como pago sin perder proteccion?",
+      "expected_output": "Tabla con china_tools.py comparar, descarte de la tienda nueva por precio sospechoso, muestras de 2 proveedores, pago dentro de 1688 o 30/70 a cuenta de empresa, Trade Assurance, plan AQL para 500.",
+      "files": [],
+      "assertions": ["Tabla comparativa con puntaje", "Descarta la tienda nueva por precio sospechoso", "Recomienda muestras de 2 proveedores", "Pago dentro de 1688 para mantener custodia", "Si hay transferencia: cuenta de empresa y 30/70", "Menciona no confirmar recepción / 延长收货", "Plan AQL correcto para 500 (50 unidades)", "Menciona Trade Assurance como alternativa"]
+    },
+    {
+      "id": 4,
+      "name": "eval-4-link-cnfans",
+      "prompt": "tenía este link de cnfans https://cnfans.com/product/?shop_type=weidian&id=7234567890 y ya no me funciona, pásamelo a kakobuy y dime qué agente conviene ahora para mandar un paquete de unos 3 kilos a chile (una caja de 40x30x25)",
+      "expected_output": "Explica cierre de CNFans, link original de Weidian y links en Kakobuy/Superbuy/Sugargoo/CSSBuy con china_tools.py enlace, advierte Mulebuy, peso volumétrico, rehearsal, recargo cambiario, aduana chilena y protección del saldo.",
+      "files": [],
+      "assertions": ["Explica que CNFans cerró", "Entrega el link original de Weidian", "Entrega link correcto de Kakobuy", "Advierte riesgo de Mulebuy", "Calcula peso volumétrico (6 kg /5000)", "Recomienda rehearsal / reducir volumen", "Menciona recargo cambiario del agente", "Aduana Chile: 6% + 19% y fin de franquicia USD 41", "Consejo de proteger saldo"]
+    },
+    {
+      "id": 5,
+      "name": "eval-5-talla-y-pesos",
+      "prompt": "vi una polera en taobao a 89 yuanes, la tabla dice M 平铺胸围52 L 55 XL 58, mi pecho mide 100 y la quiero suelta, oversize. cuánto es en pesos chilenos y qué talla pido?",
+      "expected_output": "Conversión con tipo de cambio del día y con recargo, explicación de 平铺 ×2, tabla de holgura, recomendación XL/2XL, pregunta al vendedor en chino, 偏小.",
+      "files": [],
+      "assertions": ["Convierte ¥89 a CLP con tipo del día", "Muestra monto con recargo", "Explica 平铺 ×2", "Tabla de holgura por talla", "Recomienda XL/2XL con razonamiento de holgura", "Pregunta al vendedor en chino", "Menciona 偏小 en reseñas"]
+    },
+    {
+      "id": 6,
+      "name": "eval-6-peru-fundas",
+      "prompt": "vivo en lima, quiero traer 150 fundas de celular de 1688 a 6 yuanes cada una, cuánto pago de impuestos y cuánto me sale cada funda?",
+      "expected_output": "Aplica umbral de USD 200 FOB de Perú (sin tributos), costo por funda en soles, escenario sobre el umbral con ad valorem + IGV + IPM, TLC Perú–China, advertencias de SUNAT y fraccionamiento.",
+      "files": [],
+      "assertions": ["Aplica umbral USD 200 FOB de Perú", "Concluye sin tributos para 150 unidades", "Costo por funda en soles", "Escenario sobre umbral con ad valorem + IGV 16% + IPM 2%", "Menciona TLC Perú–China", "Advierte cambio pendiente de SUNAT", "Advierte sobre fraccionamiento", "Tipo de cambio con fecha"]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "expectations": [
+    {
+      "text": "Incluye mensaje en chino listo para copiar",
+      "passed": true,
+      "evidence": "Busca en 1688 con **保温杯 304不锈钢 500ml 源头工厂** y con la foto del termo (búsqueda por imagen). Filtra 超级工厂 / 实力商家 y ubicació"
+    },
+    {
+      "text": "Pide acero 304 y certificado de material",
+      "passed": true,
+      "evidence": "304不锈钢 500ml 源头工厂** y con la foto del termo (búsqueda por imagen). Filtra 超级工厂 / 实力商家 y ubicación **永康 (Yongkang, Zhejia"
+    },
+    {
+      "text": "Apunta al clúster correcto (Yongkang)",
+      "passed": true,
+      "evidence": "永康"
+    },
+    {
+      "text": "Da referencia de precio con mediana y alerta de oferta sospechosa",
+      "passed": true,
+      "evidence": "mediana **¥14,95** (USD 2,22), rango normal ¥14,05–16,32. Una oferta a ¥9,20 queda bajo el 70% de la mediana: sospech"
+    },
+    {
+      "text": "Compara aéreo vs marítimo con costo por unidad en CLP",
+      "passed": true,
+      "evidence": "Por unidad** | **$7.427** | **$4.264"
+    },
+    {
+      "text": "Calcula margen contra el precio de venta",
+      "passed": true,
+      "evidence": "Margen a $9.990 | 25,7% | 57,3%"
+    },
+    {
+      "text": "Menciona Form F / TLC para arancel 0%",
+      "passed": true,
+      "evidence": "Form F"
+    },
+    {
+      "text": "Incluye IVA 19% y arancel 6%",
+      "passed": true,
+      "evidence": "IVA 19%"
+    },
+    {
+      "text": "Plan AQL correcto para 300 (50 unidades, Ac 3 mayor)",
+      "passed": true,
+      "evidence": "50 unidades**; mayor 2,5 acepta ≤3"
+    },
+    {
+      "text": "Advierte contacto con alimentos / grado alimentario",
+      "passed": true,
+      "evidence": "grado alimentario"
+    },
+    {
+      "text": "Considera el calendario chino (Semana Dorada)",
+      "passed": true,
+      "evidence": "Semana Dorada"
+    },
+    {
+      "text": "Termina con siguiente acción",
+      "passed": true,
+      "evidence": "Siguiente acción"
+    }
+  ]
+}

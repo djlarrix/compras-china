@@ -1,0 +1,4 @@
+proveedor,url,tipo,insignia,anos,recompra_pct,estrellas,respuesta_min,muestra_ok,video_ok,precio_cny,moq,flete_china_cny,notas
+Ejemplo Fábrica Yongkang,https://detail.1688.com/offer/XXXX.html,fabrica,super,8,38,4.8,3,si,si,13.5,100,30,Acero 304 con certificado; molde propio
+Ejemplo Mayorista Yiwu,https://detail.1688.com/offer/YYYY.html,revendedor,solidez,5,22,4.6,10,si,no,12.8,50,20,Mismas fotos que otras 6 tiendas
+Ejemplo Tienda nueva,https://detail.1688.com/offer/ZZZZ.html,desconocido,ninguna,0.5,5,4.9,60,no,no,8.2,10,0,Precio muy bajo; no responde por material

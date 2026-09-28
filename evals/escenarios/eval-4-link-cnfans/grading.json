@@ -1,0 +1,49 @@
+{
+  "expectations": [
+    {
+      "text": "Explica que CNFans cerró",
+      "passed": true,
+      "evidence": "CNFans cerró"
+    },
+    {
+      "text": "Entrega el link original de Weidian",
+      "passed": true,
+      "evidence": "https://weidian.com/item.html?itemID=7234567890"
+    },
+    {
+      "text": "Entrega link correcto de Kakobuy",
+      "passed": true,
+      "evidence": "https://www.kakobuy.com/item/details?url=https%3A%2F%2Fweidian.com%2Fitem.html%3FitemID%3D7234567890"
+    },
+    {
+      "text": "Advierte riesgo de Mulebuy",
+      "passed": true,
+      "evidence": "Mulebuy"
+    },
+    {
+      "text": "Calcula peso volumétrico (6 kg /5000)",
+      "passed": true,
+      "evidence": "6 kg"
+    },
+    {
+      "text": "Recomienda rehearsal / reducir volumen",
+      "passed": true,
+      "evidence": "rehearsal"
+    },
+    {
+      "text": "Menciona recargo cambiario del agente",
+      "passed": true,
+      "evidence": "recargo cambiario"
+    },
+    {
+      "text": "Aduana Chile: 6% + 19% y fin de franquicia USD 41",
+      "passed": true,
+      "evidence": "6% de arancel + 19% de IVA** sobre el valor CIF (producto + flete + seguro). Ya no existe la franquicia de USD 41"
+    },
+    {
+      "text": "Consejo de proteger saldo",
+      "passed": true,
+      "evidence": "Carga saldo solo"
+    }
+  ]
+}

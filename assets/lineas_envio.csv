@@ -1,0 +1,6 @@
+agente,linea,divisor,primer_peso_g,precio_primer,continuo_g,precio_continuo,cargo_fijo,moneda,dias,impuestos_incluidos,peso_max_kg,notas
+EJEMPLO Agente A,Línea económica (cobra peso real),0,500,120,500,45,8,CNY,15-25,no,30,EJEMPLO: reemplazar con tarifas actuales
+EJEMPLO Agente A,EMS,6000,500,180,500,60,8,CNY,10-18,no,30,EJEMPLO: reemplazar con tarifas actuales
+EJEMPLO Agente B,Línea especial impuestos incluidos,8000,500,150,500,55,0,CNY,12-20,si,20,EJEMPLO: sin ropa de marca ni baterías
+EJEMPLO Courier,DHL Express,5000,500,40,500,10,0,USD,5-8,no,70,EJEMPLO: cobra impuestos al entregar
+EJEMPLO Casilla Chile,Aéreo consolidado,6000,1000,12,1000,12,5,USD,12-20,no,100,EJEMPLO: gastos de aduana aparte

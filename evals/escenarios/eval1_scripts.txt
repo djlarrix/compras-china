@@ -1,0 +1,84 @@
+### precios (referencia supuesta de 8 fichas 1688 para 保温杯 304 500ml, tramo 300u)
+## Referencia de precios (8 ofertas, CNY)
+
+| Mínimo | P25 | Mediana | P75 | Máximo | Promedio |
+|---|---|---|---|---|---|
+| 9.20 | 14.05 | 14.95 | 16.32 | 22.00 | 15.22 |
+
+- Rango normal (P25–P75): 14.05 – 16.32 CNY
+- Sospechosamente baratas (< 70% de la mediana): 9.20 → revisar material, especificación, cantidad o estafa.
+- Mediana en USD: 2.22 · rango normal USD 2.09 – 2.43
+- Tipo de cambio CNY/USD = 6.7195 (open.er-api.com (caché), Mon, 28 Sep 2026; valor de mercado, sin recargos).
+
+### peso (6 cajas 60x40x40, 19 kg c/u, 50 termos por caja)
+## Peso cobrable — 6 caja(s) de 60.0×40.0×40.0 cm, 19.0 kg c/u
+
+| Método | Peso volumétrico kg | Peso real kg | Peso cobrable kg | Manda |
+|---|---|---|---|---|
+| Courier express (DHL/FedEx/UPS) (/5000) | 115.20 | 114.00 | 115.20 | volumen |
+| Aéreo IATA / muchas líneas (/6000) | 96.00 | 114.00 | 114.00 | peso real |
+| Algunas líneas económicas de agentes (/8000) | 72.00 | 114.00 | 114.00 | peso real |
+
+- Volumen total: 0.576 m³ (marítimo LCL cobra 0.576 W/M; 1 m³ = 1.000 kg). Muchos consolidados cobran un mínimo de 1 m³.
+- Densidad: 198 kg/m³ (denso: en aéreo se cobra por peso real).
+
+### costo aéreo casilla (114 kg x USD 9/kg)
+## Costo puesto en destino — chile (TC 6.7195 CNY/USD, 962.26 CLP/USD)
+
+| Concepto | USD | CLP |
+|---|---|---|
+| Producto (300 × ¥14.50) | 647.37 | 622,942 |
+| Flete interno China | 8.93 | 8,592 |
+| Comisión agente (0.0%) | 0.00 | 0 |
+| Recargo medio de pago/cambio (1.5%) | 9.84 | 9,473 |
+| Flete internacional | 1,026.00 | 987,283 |
+| Seguro (0.0%) | 0.00 | 0 |
+| Arancel (6.0% s/CIF) | 101.73 | 97,887 |
+| IVA / impuesto (19.0%) | 341.46 | 328,574 |
+| Gastos locales (agente, gestión, despacho) | 180.00 | 173,208 |
+| **TOTAL** | 2,315.33 | 2,227,958 |
+| **Por unidad** | 7.72 | 7,427 |
+
+- Valor FOB (mercadería + flete interno): USD 656.30 · Valor CIF aduanero: USD 1,695.43
+- Precio de venta 9,990 → costo 7,427, margen bruto 2,563 por unidad (25.7%). Multiplicador precio/costo: 1.35×.
+- Chile, compra directa/agente no inscrito en SII: arancel 6% s/CIF + IVA 19% s/(CIF+arancel).
+- Sin seguro contratado: se usa seguro presunto de 2% del FOB para la base aduanera (verificar criterio vigente).
+- Margen bruto bajo 40%: poco colchón para comisiones de venta, envíos, devoluciones y publicidad.
+- Tipo de cambio CNY/USD = 6.7195 (open.er-api.com (caché), Mon, 28 Sep 2026; valor de mercado, sin recargos).
+- Tipo de cambio CLP/USD = 962.2642 (open.er-api.com (caché), Mon, 28 Sep 2026; valor de mercado, sin recargos).
+
+### costo marítimo consolidado (1 m3 min USD 300 + 100 recargo <5m3; agente/despacho aprox. incluido; + TLC)
+## Costo puesto en destino — chile-tlc (TC 6.7195 CNY/USD, 962.26 CLP/USD)
+
+| Concepto | USD | CLP |
+|---|---|---|
+| Producto (300 × ¥14.50) | 647.37 | 622,942 |
+| Flete interno China | 8.93 | 8,592 |
+| Comisión agente (0.0%) | 0.00 | 0 |
+| Recargo medio de pago/cambio (1.5%) | 9.84 | 9,473 |
+| Flete internacional | 400.00 | 384,906 |
+| Seguro (0.0%) | 0.00 | 0 |
+| Arancel (0.0% s/CIF) | 0.00 | 0 |
+| IVA / impuesto (19.0%) | 203.19 | 195,523 |
+| Gastos locales (agente, gestión, despacho) | 60.00 | 57,736 |
+| **TOTAL** | 1,329.34 | 1,279,172 |
+| **Por unidad** | 4.43 | 4,264 |
+
+- Valor FOB (mercadería + flete interno): USD 656.30 · Valor CIF aduanero: USD 1,069.43
+- Precio de venta 9,990 → costo 4,264, margen bruto 5,726 por unidad (57.3%). Multiplicador precio/costo: 2.34×.
+- Chile con origen acreditado (Form F, TLC Chile–China): arancel 0% + IVA 19%.
+- Sin seguro contratado: se usa seguro presunto de 2% del FOB para la base aduanera (verificar criterio vigente).
+- Tipo de cambio CNY/USD = 6.7195 (open.er-api.com (caché), Mon, 28 Sep 2026; valor de mercado, sin recargos).
+- Tipo de cambio CLP/USD = 962.2642 (open.er-api.com (caché), Mon, 28 Sep 2026; valor de mercado, sin recargos).
+
+### aql
+## Plan AQL — lote 300 unidades, nivel general II (letra de código H, muestra base 50)
+
+| Defecto | AQL | Unidades a revisar | Acepta con ≤ | Rechaza con ≥ |
+|---|---|---|---|---|
+| Crítico | 0 | 50 | 0 | 1 |
+| Mayor | 2.5 | 50 | 3 | 4 |
+| Menor | 4.0 | 50 | 5 | 6 |
+
+- Crítico: cualquier defecto de seguridad o normativo rechaza el lote.
+- Si un plan usa una muestra mayor que otro, se revisan las unidades del plan mayor y se aplican los números de aceptación de cada tipo de defecto.

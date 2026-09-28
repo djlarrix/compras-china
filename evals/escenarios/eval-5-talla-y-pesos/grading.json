@@ -1,0 +1,39 @@
+{
+  "expectations": [
+    {
+      "text": "Convierte ¥89 a CLP con tipo del día",
+      "passed": true,
+      "evidence": "$12.745"
+    },
+    {
+      "text": "Muestra monto con recargo",
+      "passed": true,
+      "evidence": "$13.255"
+    },
+    {
+      "text": "Explica 平铺 ×2",
+      "passed": true,
+      "evidence": "平铺胸围52 L 55 XL 58, mi pecho mide 100 y la quiero suelta, oversize. cuánto es en pesos chilenos y qué talla pido?  # Resp"
+    },
+    {
+      "text": "Tabla de holgura por talla",
+      "passed": true,
+      "evidence": "| XL | 116"
+    },
+    {
+      "text": "Recomienda XL/2XL con razonamiento de holgura",
+      "passed": true,
+      "evidence": "2XL"
+    },
+    {
+      "text": "Pregunta al vendedor en chino",
+      "passed": true,
+      "evidence": "亲，我胸围100cm，身高[X]cm，体重[X]公斤，想穿宽松oversize的效果，XL还是2XL合适？有2XL吗？麻烦发一下2XL的平铺尺寸（胸围、衣长、肩宽）。"
+    },
+    {
+      "text": "Menciona 偏小 en reseñas",
+      "passed": true,
+      "evidence": "偏小"
+    }
+  ]
+}
